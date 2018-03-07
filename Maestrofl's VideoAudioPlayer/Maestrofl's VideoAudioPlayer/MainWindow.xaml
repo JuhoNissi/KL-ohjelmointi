@@ -1,0 +1,18 @@
+﻿<Window x:Class="Maestrofl_s_VideoAudioPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Maestrofl_s_VideoAudioPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="199,142,0,0" Stretch="Fill" UnloadedBehavior="Stop" LoadedBehavior="Manual"/>
+        <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="34,38,0,0" Click="btnPlay_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="135,38,0,0" Click="btnStop_Click"/>
+        <TextBox x:Name="txtFileName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Margin="34,10,0,0" TextChanged="txtFileName_TextChanged"/>
+        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="432,10,0,0" Click="btnBrowse_Click"/>
+        <Button x:Name="btnPause" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="224,38,0,0" Click="btnPause_Click"/>
+
+    </Grid>
+</Window>
